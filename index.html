@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ocampo Velazquez</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="scss/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+</head>
+<body>
+
+  <main class="cd-main-content">
+
+    <header>
+      <!-- NAV DESKTOP -->
+      <div class="container d-none d-lg-block">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+              <img src="img/logo.svg" class="logo" alt="logo">
+            </div>
+            <div class="col-auto pr-0">
+              <div class="row justify-content-end align-items-center right py-3">
+                <div class="col-auto py-0">
+                  <img src="img/tel.svg" alt="tel">
+                </div>
+                <div class="col-auto link">
+                  <a href="tel:+543624-446443" class="tel">+54 3624-446443</a>
+                  <a href="mailto:mail@ocampo-velazquez.com" class="mail">mail@ocampo-velazquez.com</a>
+                </div>
+                <div class="col-auto">
+                  <a href="#">
+                    <span class="fa-stack" style="font-size: 1rem;">
+                      <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+                      <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="fa-stack" style="font-size: 1rem;">
+                      <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+                      <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <nav class="py-3">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">El estudio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+      </div>
+
+      <!-- NAV MOBILE -->
+      <div class="mobile-inner-header d-lg-none">
+        <div style="position: relative; float: left;">
+          <a href="#"> <img src="img/logo.svg" alt="logo-dark" class="img-fluid" width="330" style="padding: 15px;"> </a>
+        </div>
+        <div class="mobile-inner-header-icon mobile-inner-header-icon-out">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-inner-nav d-lg-none">
+        <a href="#" class="to-scroll">Inicio</a>
+        <a href="#" class="to-scroll">El estudio</a>
+        <a href="#" class="to-scroll">Servicios</a>
+        <a href="#" class="to-scroll">Contacto</a>
+      </div>
+    </header>
+
+    <section class="owl-carousel" id="owl-hero">
+      <div class="item">
+        <div style="background-image: url('img/bg-header.jpg');" class="cover"></div>
+      </div>
+      <div class="item">
+        <div style="background-image: url('https://picsum.photos/1920/1080/?random');" class="cover"></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="owl-carousel" id="owl-services">
+          <div class="item">
+            <a href="#">
+              <div class="card">
+                <h3>Asesoramiento <span>financiero</span></h3>
+                <p>Este servicio permite tomar las mejores decisiones financieras, contando con una planificacion que permita anticiparse y pagar los menores costos.</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card">
+                <h3>Asesoramiento en <span>CONTROL DE GESTION</span></h3>
+                <p>Permite conocer la rentabilidad de su negocio desde la perspectiva de los indicadores que permiten focalizar en las operaciones que agregan valor y en las que se deberán aplicar acciones correctivas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card">
+                <h3>Elaboracion de <span>proyectos</span></h3>
+                <p>La evaluación de proyectos, permite decidir qué planes son o no rentables desde el análisis de la inversión inicial, los flujos de caja etc.</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card">
+                <h3>Elaboracion de <span>proyectos</span></h3>
+                <p>La evaluación de proyectos, permite decidir qué planes son o no rentables desde el análisis de la inversión inicial, los flujos de caja etc.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="consultancy">
+      <div class="container">
+        <div class="row pb-3 pb-md-5">
+          <div class="col text-center pb-3 pb-md-5">
+            <h2>¿QUÉ TIPO DE <span>CONSULTORÍA</span> NECESITA?</h2>
+          </div>
+        </div>
+        <div class="row align-items-start">
+          <div class="col-12 col-md-4 text-center">
+            <img src="https://picsum.photos/350/300/?random" alt="" class="img-fluid rounded d-md-none">
+            <h3 class="mt-3 mt-md-0">Empresarios en actividad</h3>
+            <p class="px-5 px-md-0">Necesitan un asesoramiento continuo sobre sus impuestos, proyectos, finanzas y temas laborales.</p>
+            <img src="https://picsum.photos/350/300/?random" alt="" class="img-fluid rounded d-none d-md-block">
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <img src="https://picsum.photos/350/300/?random" alt="" class="img-fluid rounded mb-md-3">
+            <h3 class="mt-3 mt-md-0">Futuros empresarios</h3>
+            <p class="px-5 px-md-0">Necesitan asesoramiento de como iniciar su actividad.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <img src="https://picsum.photos/350/300/?random" alt="" class="img-fluid rounded d-md-none">
+            <h3 class="mt-3 mt-md-0">Entidades públicas</h3>
+            <p class="px-5 px-md-0">Que tengan la intención de mejorar sus servicios, sus resultados,  a través de la eficiencia de sus procesos,  recursos humanos y tecnológicos.</p>
+            <img src="https://picsum.photos/350/300/?random" alt="" class="img-fluid rounded d-none d-md-block">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner cover">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <p>
+                Un buen asesoramiento redunda en mayores beneficios en sus negocios o menores costos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+              <div class="separator-xs"></div>
+              <h2 class="mb-5">
+                <small>Conocelos</small>
+                Nuestros <span>socios</span>
+              </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="owl-carousel" id="owl-team">
+              <div class="row item">
+                <div class="col-lg-7 order-2 order-lg-1">
+                  <div class="card">
+                    <p class="title">Alicia C. Vazquez</p>
+                    <p class="subtitle">Contadora Pública</p>
+                    <p class="txt">
+                        Responsable de Asesoramiento financiero,<br>
+                        control de gestion y auditoria externa de estados contables
+                    </p>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                  <img src="https://picsum.photos/444/335/?random" alt="" class="img-fluid rounded-lg">
+                </div>
+              </div>
+              <!-- ITEM 2 -->
+              <div class="row item">
+                <div class="col-lg-7 order-2 order-lg-1">
+                  <div class="card">
+                    <p class="title">Alicia C. Vazquez</p>
+                    <p class="subtitle">Contadora Pública</p>
+                    <p class="txt">
+                        Responsable de Asesoramiento financiero,<br>
+                        control de gestion y auditoria externa de estados contables
+                    </p>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                  <img src="https://picsum.photos/444/335/?random" alt="" class="img-fluid rounded-lg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+              <img src="img/logo.svg" class="logo img-fluid pr-lg-5" alt="logo">
+              <p>
+                  Contamos con un equipo especializado en diferentes areas tecnicas. <br>
+                  Mantenemos contacto directo con los clientes, escuchamos sus necesidades y elaboramos respuestas integrales a medida.
+              </p>
+              <a href="#" target="_blank">
+                <span class="fa-stack ">
+                  <i class="fas fa-square fa-stack-2x" style="font-size: 1.2rem; color: #2f62a3;"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="font-size: 1.2rem; color: white;"></i>
+                </span>
+              </a>
+              <a href="#" target="_blank">
+                <span class="fa-stack ">
+                  <i class="fas fa-square fa-stack-2x" style="font-size: 1.2rem; color: #2f62a3;"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="font-size: 1.2rem; color: white;"></i>
+                </span>
+              </a>
+          </div>
+          <div class="col-md-6 col-lg-2 menu mb-5 mb-lg-0 ">
+            <h4>Explorar</h4>
+            <a href="#"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Inicio</a>
+            <a href="#"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; El Estudio</a>
+            <a href="#"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
+            <a href="#"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Contacto</a>
+          </div>
+          <div class="col-md-6 col-lg-3 contact mb-5 mb-lg-0">
+            <h4>Contáctenos</h4>
+            <a href="#"><i class="fas fa-phone-volume" style="font-size: 1.5rem;"></i> 3624-446443</a>
+            <a href="#"><i class="far fa-envelope-open" style="font-size: 1.5rem;"></i> info@ocampovazquez.com.ar</a>
+            <a href="#"><i class="far fa-clock" style="font-size: 1.5rem;"></i> Lunes a Viernes de 8:00 a 12:00 y de 17:00 a 20:00</a>
+            <a href="#"><i class="fas fa-map-marker-alt" style="font-size: 1.5rem;"></i> Padre Cerqueira 918 Resistencia Chaco</a>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <h4>Solicite una consulta rápida</h4>
+            <form action="">
+              <input type="text" placeholder="Su nombre y apellido">
+              <input type="email" placeholder="E-mail">
+              <input type="text" placeholder="Asunto">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="text-center text-lg-left">Derechos de autor © 2018 Copious. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/app.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+</body>
+</html>

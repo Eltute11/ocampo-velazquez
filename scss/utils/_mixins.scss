@@ -1,0 +1,30 @@
+@mixin placeholder() {
+    ::-webkit-input-placeholder {@content};
+    :-moz-placeholder           {@content};
+    ::-moz-placeholder          {@content};
+    :-ms-input-placeholder      {@content}; 
+}
+@include placeholder() {
+    color: $color-primary-700 !important;
+}
+
+// variables:
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+@mixin media-breakpoint-down($media) {
+  @if $media == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  }
+  @else if $media == xl {
+    @media (max-width: $breakpoint-xl) { @content; }
+  }
+}

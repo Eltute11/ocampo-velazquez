@@ -1,0 +1,98 @@
+#services{
+    background: url('https://picsum.photos/1920/1080/?random') no-repeat center;
+    background-size: cover;
+    padding: 136px 0 95px;
+    @include media-breakpoint-down(lg) {
+        padding: 65px 0 95px;
+    }
+    .card{
+        min-height: 287px;
+        -webkit-transition: background 300ms;
+        transition: background 300ms;
+        h3{
+            font-weight: 700;
+            font-size: 22px;
+            color: $color-grey-700;
+            text-transform: uppercase;
+            margin-top: 32px;
+            margin-bottom: 40px;
+            -webkit-transition: color 300ms;
+            transition: color 300ms;
+            span{
+                color: $color-primary-400;
+                -webkit-transition: color 300ms;
+                transition: color 300ms;
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            color: $color-grey-400; 
+            -webkit-transition: color 300ms;
+            transition: color 300ms;
+        }
+        &:hover{
+            background-color: $color-primary-400;
+            h3, 
+            span,
+            p{
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+#consultancy{
+    padding: 100px 0 120px;
+    h3{
+        font-weight: 700;
+        font-size: 22px;
+        color: $color-grey-400;
+    }
+    p{
+        height: 100px;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color-grey-300;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+#team{
+    padding: 90px 0 115px;
+    .card{
+        background-color: #f2f2f2;
+        min-height: 332px;
+        padding-top: 50px;
+        .title{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 30px;
+            color: $color-grey-700;
+        }
+        .subtitle{
+            font-weight: 400;
+            font-size: 17px;
+            color: $color-grey-300;
+            margin-bottom: 25px;
+        }
+        .txt{
+            font-weight: 400;
+            font-size: 17px;
+            color: $color-grey-400;
+            margin-bottom: 30px;
+        }
+        a{
+            position: relative;
+            font-size: 17px;
+            color: $color-primary-300;
+            padding-left: 40px;
+        }
+        svg{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
