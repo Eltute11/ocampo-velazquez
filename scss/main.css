@@ -473,6 +473,13 @@ footer .contact a svg {
   padding-top: 50px;
 }
 
+@media (max-width: 992px) {
+  #team .card {
+    background-color: #FFF;
+    padding-left: 0;
+  }
+}
+
 #team .card .title {
   font-weight: 500;
   font-size: 32px;
@@ -507,6 +514,17 @@ footer .contact a svg {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+#team img {
+  border-radius: .3rem;
+}
+
+@media (max-width: 992px) {
+  #team img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 /* HEADER */

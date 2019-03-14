@@ -64,6 +64,10 @@
         background-color: #f2f2f2;
         min-height: 332px;
         padding-top: 50px;
+        @include media-breakpoint-down(lg) {
+            background-color: #FFF;
+            padding-left: 0;
+        }
         .title{
             font-weight: 500;
             font-size: 32px;
@@ -93,6 +97,13 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+        }
+    }
+    img{
+        border-radius: .3rem;
+        @include media-breakpoint-down(lg) {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
         }
     }
 }
