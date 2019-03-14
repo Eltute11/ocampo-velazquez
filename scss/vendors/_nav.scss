@@ -3,10 +3,12 @@
 .mobile-inner-header{
 	background-color: $color-primary-700;
 	width: 100%;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-    z-index: 9;
+	position: relative;
+	height: 70px;
+	// position: absolute;
+	// top: 0px;
+	// left: 0px;
+  z-index: 9;
 }
 .mobile-inner-header #logo{
   width: 180px;
@@ -14,11 +16,11 @@
 }
 .mobile-inner-header-icon{
 	color: #ffffff;
-	height: 90px;
+	height: 70px;
 	font-size:25px;
 	text-align: center;
 	float:right;
-	width: 100px;
+	width: 70px;
 	position: relative;
 	-webkit-transition: background 0.5s;
 	-moz-transition: background 0.5s;
@@ -117,7 +119,7 @@
 	background-color: $color-primary-700;
 	width: 100%;
 	position: absolute;
-	top: 90px;
+	top: 70px;
 	left: 0px;
 	padding-top: 30px;
 	padding-bottom: 80px;

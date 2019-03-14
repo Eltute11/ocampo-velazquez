@@ -44,7 +44,7 @@ jQuery(function($) {
       }
     });
 
-    $("#owl-team").owlCarousel({
+    $("#owl-team-home").owlCarousel({
       loop:true,
       margin:0,
       nav:false,
@@ -63,6 +63,31 @@ jQuery(function($) {
         992:{
           nav: true,
           items: 1,
+      }
+      }
+      // animateOut: 'fadeOut'
+    });
+
+    $("#owl-team").owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      dots:false,
+      items:1,
+      autoplay:true, 
+      autoplayTimeout:5000, 
+      autoplayHoverPause:true,
+      lazyLoad: true,
+      responsive:{
+        768:{
+            nav: true,
+            items: 2,
+            margin: 30,
+        },
+        992:{
+          nav: true,
+          items: 3,
+          margin: 30,
       }
       }
       // animateOut: 'fadeOut'
