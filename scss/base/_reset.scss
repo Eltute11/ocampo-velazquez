@@ -37,6 +37,26 @@ a:hover{
     color: $color-primary-700 !important;
     padding: 15px 35px;
 }
+.btn-default{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 0 !important;
+    padding: 11px 30px;
+    max-width: 140px;
+}
+.btn-outline-primary{
+    border: 2px solid $color-primary-400 !important;
+    color: $color-primary-400 !important;
+    padding: 15px 35px;
+    &:hover{
+        color: #ffffff !important;
+        background-color: $color-primary-400 !important;
+    }
+}
 .font-weight-medium{
     font-weight: 500;
 }
@@ -78,6 +98,38 @@ a:hover{
         @include media-breakpoint-down(lg) {
             font-size: 36px;
         }
+    }
+}
+.banner-md{
+    position: relative;
+    overflow: hidden;
+    height: 391px;
+    &.overlay-blue{
+        &::before{
+            background-color: rgba(47, 98, 163, 0.3);
+        }
+    }
+    h1{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 80px;
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 32px;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 400px;
+    }
+    img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-box-shadow: 5px 6px 34px -8px rgba(77,77,77,1);
+        -moz-box-shadow: 5px 6px 34px -8px rgba(77,77,77,1);
+        box-shadow: 5px 6px 34px -8px rgba(77,77,77,1);
     }
 }
 .separator-xs{
@@ -125,4 +177,7 @@ blockquote{
         font-style: italic;
         font-size: 18px;
     }
+}
+.bg-blue{
+    background-color: $color-primary-400;
 }

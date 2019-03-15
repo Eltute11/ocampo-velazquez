@@ -1,0 +1,51 @@
+article{
+    h4{
+        font-weight: 500;
+        font-size: 22px;
+        color: $color-grey-700;
+        margin-bottom: 25px;
+    }
+    p{
+        color: $color-grey-300;
+        small{
+            color: $color-grey-300;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    ol{
+        margin-left: 18px;
+        li {
+            position: relative;
+            color: $color-grey-400;
+            &:before{
+                content: '';
+                position: absolute;
+                display: block;
+                top: 8px;
+                left: -18px;
+                width: 8px;
+                height: 8px;
+                background-color: $color-primary-400;
+            }
+        }
+    }
+    p, li{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+}
+#services-list{
+    .list{
+        -webkit-transition: height 0.5s;
+        -moz-transition: height 0.5s;
+        -o-transition: height 0.5s;
+        transition: height 0.5s;
+        overflow: hidden;
+        height: 0;
+        &.show{
+            height: 480px;
+        }
+    }
+}

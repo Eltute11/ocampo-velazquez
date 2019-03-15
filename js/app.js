@@ -112,5 +112,16 @@ jQuery(function($) {
       });
     }
 
+    // Boton de listado de soluciones en mobile
+    var list = $('.list');
+    $('#btn-list').click(function() {
+  
+      if(list.hasClass('show')){
+        list.removeClass('show');
+      }else{
+        list.addClass('show');
+      }
+    });
+
     
 });
