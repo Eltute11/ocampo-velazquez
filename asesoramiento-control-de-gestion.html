@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ocampo Vazquez</title>
+  <title>Ocampo Vazquez | Asesoramiento Control de Gestión</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="scss/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Roboto:300,400,500,700,900" rel="stylesheet">
@@ -22,13 +22,11 @@
 </head>
 <body>
 
-  <!-- <img src="img/bg-header.jpg" alt="" style="opacity: 0;height: 0;width: 0;position:absolute;"> -->
-
    <!-- <div id="loader"><img src="img/logo.svg" alt=""></div> -->
 
    <main class="cd-main-content">
 
-    <header class="absolute">
+    <header class="bg-image cover overlay-blue">
       <!-- NAV MOBILE -->
       <div class="mobile-inner-header d-lg-none">
         <div style="position: relative; float: left;">
@@ -44,12 +42,38 @@
         <a href="estudio.html">El estudio</a>
         <a href="index.html#services" class="to-scroll">Servicios</a>
         <a href="contacto.html">Contacto</a>
+        <div class="contact-menu">
+          <a href="tel:+543624-446443">
+            <span class="fa-stack" style="font-size: 1.4rem;">
+              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+              <i class="fas fa-phone-volume fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+            </span>
+          </a>
+          <a href="mailto:mail@ocampo-vazquez.com">
+            <span class="fa-stack" style="font-size: 1.4rem;">
+              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+              <i class="far fa-envelope-open fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="fa-stack" style="font-size: 1.4rem;">
+              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+              <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="fa-stack" style="font-size: 1.4rem;">
+              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+              <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+            </span>
+          </a>
+        </div>
       </div>
       <!-- NAV DESKTOP -->
       <div class="container d-none d-lg-block top">
         <div class="row justify-content-between align-items-center">
             <div class="col-auto">
-              <a href="./"><img src="img/logo.svg" class="logo" alt="logo"></a>
+              <a href="./"> <img src="img/logo.svg" class="logo" alt="logo"></a>
             </div>
             <div class="col-auto pr-0">
               <div class="row justify-content-end align-items-center right py-3 m-0">
@@ -103,179 +127,94 @@
         </div>
       </div>
 
+      <div class="container-fluid" id="breadcrumb">
+        <div class="row">
+          <div class="container">
+              <div class="row justify-content-between align-items-start">
+                <div class="col-auto p-sm-0">
+                  <h1>Servicios</h1>
+                </div>
+                <div class="col-auto p-0 d-none d-sm-flex">
+                  <nav>
+                    <ol>
+                      <li>Estás aquí: </li>
+                      <li><a href="./"><i class="fas fa-chevron-right" style="color: #fff;"></i>&nbsp; Inicio</a></li>
+                      <li><a href="asesoramiento-control-de-gestion.html"><i class="fas fa-chevron-right" style="color: #fff;"></i>&nbsp; Asesoramiento Control de Gestión</a></li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
     </header>
 
-    <section class="owl-carousel" id="owl-hero">
-      <div class="item">
-        <div style="background-image: url('img/bg-header.jpg');" class="cover overlay-blue">
-          <div class="container">
-            <div class="row mx-4 mx-lg-n2">
-              <div class="col-lg-6">
-                <div class="separator-xs"></div>
-                <h1>Consultoría <span>Financiera</span></h1>
-                <p class="mb-3">Somos un estudio contable con 10 años de trayectoria en el mercado local. Nuestro objeto de asesorar en forma personalizada a las pequeñas y medianas empresas de las provincias de Chaco y Corrientes.</p>
-                <a href="estudio.html" class="btn btn-primary">Mas información</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div style="background-image: url('img/bg-header.jpg');" class="cover overlay-blue">
-          <div class="container">
-            <div class="row mx-4 mx-lg-n2">
-              <div class="col-lg-6">
-                <div class="separator-xs"></div>
-                <h1>Consultoría <span>Financiera</span></h1>
-                <p class="mb-3">Somos un estudio contable con 10 años de trayectoria en el mercado local. Nuestro objeto de asesorar en forma personalizada a las pequeñas y medianas empresas de las provincias de Chaco y Corrientes.</p>
-                <a href="estudio.html" class="btn btn-primary">Mas información</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="owl-carousel" id="owl-services">
-          <div class="item">
-            <a href="asesoramiento-financiero.html">
-              <div class="card">
-                <h3>Asesoramiento <span>financiero</span></h3>
-                <p>Este servicio permite tomar las mejores decisiones financieras, contando con una planificacion que permita anticiparse y pagar los menores costos.</p>
-              </div>
-            </a>
-          </div>
-          <div class="item">
-            <a href="asesoramiento-control-de-gestion.html">
-              <div class="card">
-                <h3>Asesoramiento en <span>CONTROL DE GESTION</span></h3>
-                <p>Permite conocer la rentabilidad de su negocio desde la perspectiva de los indicadores que permiten focalizar en las operaciones que agregan valor y en las que se deberán aplicar acciones correctivas.</p>
-              </div>
-            </a>
-          </div>
-          <div class="item">
-            <a href="elaboracion-de-proyectos.html">
-              <div class="card">
-                <h3>Elaboracion de <span>proyectos</span></h3>
-                <p>La evaluación de proyectos, permite decidir qué planes son o no rentables desde el análisis de la inversión inicial, los flujos de caja etc.</p>
-              </div>
-            </a>
-          </div>
-          <div class="item">
-            <a href="organizacion-administrativa-e-implementacion-de-erp.html">
-              <div class="card">
-                <h3>Org. Administrativa e <span>Implementacion de ERP</span></h3>
-                <p>La adecuada selección e implementación de un sistema de gestión permite el manejo eficiente de información y asegura los mecanismos de control sobre los recursos de la organización.</p>
-              </div>
-            </a>
-          </div>
-          <div class="item">
-            <a href="asesoramiento-impositivo.html">
-              <div class="card">
-                <h3>Asesoramiento <span>Impositivo</span></h3>
-                <p>Brindando un asesoramiento de calidad el cliente percibe tranquilidad y respaldo que le permitirá cumplir con las obligaciones impositivas y laborales y obtener ventajas por el aprovechamiento de beneficios fiscales de acuerdo a la actividad de la empresa.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="consultancy">
-      <div class="container">
-        <div class="row pb-3 pb-md-5">
-          <div class="col text-center pb-3 pb-md-5">
-            <h2>¿QUÉ TIPO DE <span>CONSULTORÍA</span> NECESITA?</h2>
-          </div>
-        </div>
-        <div class="row align-items-start">
-          <div class="col-12 col-md-4 text-center">
-            <img src="img/img-h1.jpg" alt="" class="img-fluid rounded d-md-none overlay-blue">
-            <h3 class="mt-3 mt-md-0">Empresarios en actividad</h3>
-            <p class="px-5 px-md-0">Necesitan un asesoramiento continuo sobre sus impuestos, proyectos, finanzas y temas laborales.</p>
-            <img src="img/img-h1.jpg" alt="" class="img-fluid rounded d-none d-md-block overlay-blue">
-          </div>
-          <div class="col-12 col-md-4 text-center">
-            <img src="https://picsum.photos/350/300/?random" alt="" class="img-fluid rounded mb-md-3 overlay-blue">
-            <h3 class="mt-3 mt-md-0">Futuros empresarios</h3>
-            <p class="px-5 px-md-0">Necesitan asesoramiento de como iniciar su actividad.</p>
-          </div>
-          <div class="col-12 col-md-4 text-center">
-            <img src="img/img-h3.jpg" alt="" class="img-fluid rounded d-md-none overlay-blue">
-            <h3 class="mt-3 mt-md-0">Entidades públicas</h3>
-            <p class="px-5 px-md-0">Que tengan la intención de mejorar sus servicios, sus resultados,  a través de la eficiencia de sus procesos,  recursos humanos y tecnológicos.</p>
-            <img src="img/img-h3.jpg" alt="" class="img-fluid rounded d-none d-md-block overlay-blue">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="banner cover">
+    <section class="py-5">
       <div class="container">
         <div class="row">
-          <div class="col text-center">
-            <p>
-                Un buen asesoramiento redunda en mayores beneficios en sus negocios o menores costos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-              <div class="separator-xs"></div>
-              <h2 class="mb-5">
-                <small>Conocelos</small>
-                Nuestros <span>socios</span>
-              </h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="owl-carousel" id="owl-team-home">
-              <div class="row item">
-                <div class="col-lg-7 order-2 order-lg-1">
-                  <div class="card">
-                    <p class="title">Alicia C. Vazquez</p>
-                    <p class="subtitle">Contadora Pública</p>
-                    <p class="txt">
-                        Responsable de Asesoramiento financiero,<br>
-                        control de gestion y auditoria externa de estados contables
-                    </p>
-                    <a href="#" target="_blank">
-                      <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-5 order-1 order-lg-2">
-                  <img src="img/alicia-h.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <!-- ITEM 2 -->
-              <div class="row item">
-                <div class="col-lg-7 order-2 order-lg-1">
-                  <div class="card">
-                    <p class="title">Alicia C. Vazquez</p>
-                    <p class="subtitle">Contadora Pública</p>
-                    <p class="txt">
-                        Responsable de Asesoramiento financiero,<br>
-                        control de gestion y auditoria externa de estados contables
-                    </p>
-                    <a href="#" target="_blank">
-                      <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-5 order-1 order-lg-2">
-                  <img src="img/alicia-h.jpg" alt="" class="img-fluid">
-                </div>
+          <aside class="col-lg-auto d-none d-lg-block">
+            <div class="widget">
+              <h4>Todas las soluciones</h4>
+              <ul>
+                <li><a href="asesoramiento-financiero.html">Asesoramiento Financiero</a></li>
+                <li class="active"><a href="asesoramiento-control-de-gestion.html">Asesoramiento en Control de Gestión</a></li>
+                <li><a href="elaboracion-de-proyectos.html">Elaboración de Proyectos</a></li>
+                <li><a href="organizacion-administrativa-e-implementacion-de-erp.html">Organización Administrativa e Implementacion de ERP</a></li>
+                <li><a href="asesoramiento-impositivo.html">Asesoramiento Impositivo</a></li>
+                <li><a href="auditorias-externas-de-estados-contables.html">Auditorias Externas de Estados Contables</a></li>
+              </ul>
+            </div>
+            <div class="widget contact">
+              <h4>Estemos en contacto</h4>
+              <a href="tel:3624-446443"><i class="fas fa-phone-volume" style="font-size: 1.5rem;"></i> 3624-446443</a>
+              <a href="mailto:info@ocampovazquez.com.ar"><i class="far fa-envelope-open" style="font-size: 1.5rem;"></i> info@ocampovazquez.com.ar</a>
+              <a href="https://goo.gl/maps/s9cqnDGRk3s" target="_blank"><i class="far fa-clock" style="font-size: 1.5rem;"></i> Lunes a Viernes de 8:00 a 12:00 y de 17:00 a 20:00</a>
+              <a href="https://goo.gl/maps/s9cqnDGRk3s" target="_blank"><i class="fas fa-map-marker-alt" style="font-size: 1.5rem;"></i> Padre Cerqueira 918 Resistencia Chaco</a>
+            </div>
+            <div class="widget">
+              <div class="card bg-blue">
+                <h4>¿Tiene una pregunta?</h4>
+                <p class="pr-md-4">No dude en consultarnos. Puede hacerlo desde nuestro formulario de consulta. A la brevedad estaremos respondiendo</p>
+                <a href="contacto.html" class="btn btn-default mt-2">Consultar</a>
               </div>
             </div>
+          </aside>
+          <article class="col-lg">
+            <div class="banner-md rounded-lg cover overlay-blue mb-4" style="background-image: url('img/asesoramiento-gestion-control.jpeg');">
+              <img src="img/ovv.jpg" alt="" id="ovv">
+              <h1>Asesoramiento en Control de Gestión</h1>
+            </div>
+            <h4>Asesoramiento en Control de Gestión</h4>
+            <p><small>Este servicio permite conocer la rentabilidad de su negocio desde la perspectiva de los indicadores que permiten focalizar en las operaciones que agregan valor y en las que se deberán aplicar acciones correctivas. </small></p>
+            <ol class="mt-4 mb-5">
+              <li>Diagnostico de la situación económica financiera actual de la empresa. Determinación del resultado económico y flujo de fondos.</li>
+              <li>Estudio de la información disponible y relevamiento de los sistemas internos de información.</li>
+              <li>Determinación de indicadores claves para la gestión e implementación de mecanismos de seguimiento de los mismos.</li>
+              <li>Asesoramiento en implementación de planificación económica y financiera. Elaboración de presupuestos operativos.</li>
+            </ol>
+            <h4>Responde a las preguntas:</h4>
+            <p>¿Tiene información fiable para fijar precios a sus productos o servicios?</p>
+            <p>¿Sabe exactamente la rentabilidad de sus líneas de negocio y de su empresa en general?</p>
+            <p>¿Tiene un presupuesto que oriente la gestión de su empresa?</p>
+            <p>¿Conoce sus costes indirectos por departamentos?</p>
+            <p>¿Tiene claro cuánto ha de facturar como mínimo su empresa (punto de equilibrio)?</p>
+            <p>¿Sabe qué costes están sufriendo desviaciones respecto del año anterior?</p>
+            <p>¿Algún informe le demuestra si es o no conveniente vender un producto o servicio
+              deficitario?</p>
+            <p>¿Tiene un indicador para medir la eficacia de la gestión de cobros?</p>
+            <p>¿Sabe cuántos costes fijos puede asumir su empresa?</p>
+          </article>
+           <div class="widget mt-5 mx-4 d-lg-none" id="services-list">
+            <button class="btn btn-outline-primary btn-block" id="btn-list">Todas las soluciones</button>
+            <ul class="list mt-3">
+              <li><a href="asesoramiento-financiero.html">Asesoramiento Financiero</a></li>
+              <li class="active"><a href="asesoramiento-control-de-gestion.html">Asesoramiento en Control de Gestión</a></li>
+              <li><a href="elaboracion-de-proyectos.html">Elaboración de Proyectos</a></li>
+              <li><a href="organizacion-administrativa-e-implementacion-de-erp.html">Organización Administrativa e Implementacion de ERP</a></li>
+              <li><a href="asesoramiento-impositivo.html">Asesoramiento Impositivo</a></li>
+              <li><a href="auditorias-externas-de-estados-contables.html">Auditorias Externas de Estados Contables</a></li>
+            </ul>
           </div>
         </div>
       </div>

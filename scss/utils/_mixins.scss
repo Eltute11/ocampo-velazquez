@@ -9,10 +9,10 @@
 }
 
 // variables:
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+$breakpoint-sm: 575px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 991px;
+$breakpoint-xl: 1199px;
 
 @mixin media-breakpoint-down($media) {
   @if $media == sm {

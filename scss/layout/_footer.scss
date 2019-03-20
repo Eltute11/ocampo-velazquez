@@ -1,6 +1,9 @@
 footer{
     background-color: $color-primary-700;
     padding: 100px 0 80px;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 0;
+    }
     h4{
         font-weight: 700;
         font-size: 22px;
@@ -25,6 +28,9 @@ footer{
         display: block;
         color: #ffffff !important;
         margin-bottom: 10px;
+    }
+    .btn-primary{
+        color: $color-primary-700 !important;
     }
 }
 #copyright{

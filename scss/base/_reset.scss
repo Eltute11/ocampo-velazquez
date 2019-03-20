@@ -1,11 +1,15 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+#contact h1,
 h2{
     font-weight: 700;
     font-size: 32px;
     color: $color-grey-700;
     text-transform: uppercase;
+    @include media-breakpoint-down(lg) {
+        font-size: 23px;
+    }
     span{
         color: $color-primary-400;
     }
@@ -34,7 +38,7 @@ a:hover{
 .btn-primary{
     background-color: $color-primary-300 !important;
     border: 0 !important;
-    color: $color-primary-700 !important;
+    color: #ffffff !important;
     padding: 15px 35px;
 }
 .btn-default{
@@ -78,6 +82,9 @@ a:hover{
     padding: 125px 50px 120px;
     background-image: url('../img/bg-parallax.jpg');
     position: relative;
+    @include media-breakpoint-down(lg) {
+        padding: 65px 50px 75px;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -96,7 +103,10 @@ a:hover{
         font-size: 48px;
         color: #ffffff;
         @include media-breakpoint-down(lg) {
-            font-size: 36px;
+            font-size: 28px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
         }
     }
 }
@@ -104,6 +114,9 @@ a:hover{
     position: relative;
     overflow: hidden;
     height: 391px;
+    @include media-breakpoint-down(sm) {
+        height: 300px;
+    }
     &.overlay-blue{
         &::before{
             background-color: rgba(47, 98, 163, 0.3);
@@ -121,7 +134,11 @@ a:hover{
         line-height: 32px;
         text-transform: uppercase;
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
+        @include media-breakpoint-down(sm) {
+            font-size: 21px;
+            max-width: 340px;
+        }
     }
     img{
         position: absolute;
@@ -180,4 +197,21 @@ blockquote{
 }
 .bg-blue{
     background-color: $color-primary-400;
+}
+#loader{
+    background-color: $color-primary-700;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 9999;
+    img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }

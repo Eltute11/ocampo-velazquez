@@ -14,14 +14,19 @@ jQuery(function($) {
     $("#owl-hero").owlCarousel({
       loop:true,
       margin:0,
-      nav:true,
+      nav:false,
       dots:false,
       items:1,
       autoplay:true, 
       autoplayTimeout:5000, 
       autoplayHoverPause:true,
       animateOut: 'fadeOut',
-      lazyLoad: true
+      lazyLoad: false,
+      responsive:{
+        768:{
+          nav:true
+        }
+      }
     });
 
     $("#owl-services").owlCarousel({
@@ -123,5 +128,55 @@ jQuery(function($) {
       }
     });
 
+    // SCROLL
+    $("a.to-scroll").on('click',function(e) {
+      var url = e.target.href;
+      var hash = url.substring(url.indexOf("#")+1);
+      $('html, body').animate({
+          scrollTop: $('#'+hash).offset().top
+      }, 700);
+      return false;
+    });  
     
 });
+
+// Contact
+function contact_footer(){
+  $.ajax({
+    method:"POST",
+    url: "send-footer.php",
+    data: $("#contact-footer").serialize(),
+    beforeSend: function () {
+      jQuery("#btn_enviar_footer").val("Procesando");
+    },
+    complete:function(datos){
+      jQuery("#btn_enviar_footer").val("Enviar");
+    },
+    success:function(datos){
+      $("#resultado-footer").html(datos);
+    },
+    error: function(datos){
+      $("#resultado-footer").html("<div class='alert alert-danger' role='alert'>Error en el envio del formulario</div>");
+    }
+  });
+};
+
+function contact_body(){
+  $.ajax({
+    method:"POST",
+    url: "send-body.php",
+    data: $("#contact-body").serialize(),
+    beforeSend: function () {
+      jQuery("#btn_enviar_body").val("Procesando");
+    },
+    complete:function(datos){
+      jQuery("#btn_enviar_body").val("Enviar");
+    },
+    success:function(datos){
+      $("#resultado-body").html(datos);
+    },
+    error: function(datos){
+      $("#resultado-body").html("<div class='alert alert-danger' role='alert'>Error en el envio del formulario</div>");
+    }
+  });
+};

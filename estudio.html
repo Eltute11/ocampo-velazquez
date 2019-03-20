@@ -4,14 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ocampo Velazquez | El Estudio</title>
+  <title>Ocampo Vazquez | El Estudio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="scss/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Roboto:300,400,500,700,900" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    // jQuery(function ($) {
+    //   document.onreadystatechange = () => {
+    //     if (document.readyState === 'complete') {
+    //       $('main').removeClass('d-none');
+    //       $('#loader').fadeOut("slow");
+    //     }
+    //   };
+    // });
+  </script>
 </head>
 <body>
 
-  <main class="cd-main-content">
+   <!-- <div id="loader"><img src="img/logo.svg" alt=""></div> -->
+
+   <main class="cd-main-content">
 
     <header class="bg-image cover overlay-blue">
       <!-- NAV MOBILE -->
@@ -27,7 +40,7 @@
       <div class="mobile-inner-nav d-lg-none">
         <a href="./">Inicio</a>
         <a href="estudio.html">El estudio</a>
-        <a href="#">Servicios</a>
+        <a href="index.html#services" class="to-scroll">Servicios</a>
         <a href="contacto.html">Contacto</a>
         <div class="contact-menu">
           <a href="tel:+543624-446443">
@@ -36,7 +49,7 @@
               <i class="fas fa-phone-volume fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
             </span>
           </a>
-          <a href="mailto:mail@ocampo-velazquez.com">
+          <a href="mailto:mail@ocampo-vazquez.com">
             <span class="fa-stack" style="font-size: 1.4rem;">
               <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
               <i class="far fa-envelope-open fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
@@ -69,7 +82,7 @@
                 </div>
                 <div class="col-auto link">
                   <a href="tel:+543624-446443" class="tel">+54 3624-446443</a>
-                  <a href="mailto:mail@ocampo-velazquez.com" class="mail">mail@ocampo-velazquez.com</a>
+                  <a href="mailto:mail@ocampo-vazquez.com" class="mail">mail@ocampo-vazquez.com</a>
                 </div>
                 <div class="col-auto">
                   <a href="#">
@@ -96,12 +109,13 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="asesoramiento-financiero.html">Asesoramiento Financiero</a>
+                      <a class="dropdown-item" href="asesoramiento-control-de-gestion.html">Asesoramiento en Control de Gestión</a>
+                      <a class="dropdown-item" href="elaboracion-de-proyectos.html">Elaboración de Proyectos</a>
+                      <a class="dropdown-item" href="organizacion-administrativa-e-implementacion-de-erp.html">Org. Adm. e Implementacion de ERP</a>
+                      <a class="dropdown-item"href="asesoramiento-impositivo.html">Asesoramiento Impositivo</a>
+                      <a class="dropdown-item" href="auditorias-externas-de-estados-contables.html">Auditorias Externas de Estados Contables</a>
                     </div>
                   </li>
                   <li class="nav-item">
@@ -159,7 +173,7 @@
               </blockquote>
           </div>
           <div class="col-lg-5">
-              <img src="https://picsum.photos/450/450/?random" alt="" class="img-fluid rounded-lg">
+              <img src="img/estudio.jpg" alt="" class="img-fluid rounded-lg">
           </div>
         </div>
       </div>
@@ -194,7 +208,7 @@
             <div class="owl-carousel" id="owl-team">
               <div class="row item">
                 <div class="col-12">
-                  <img src="https://picsum.photos/350/350/?random" alt="" class="img-fluid">
+                  <img src="img/alicia.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-12">
                   <div class="card">
@@ -213,7 +227,7 @@
               <!-- ITEM 2 -->
               <div class="row item">
                 <div class="col-12">
-                  <img src="https://picsum.photos/350/350/?random" alt="" class="img-fluid">
+                  <img src="img/alicia.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-12">
                   <div class="card">
@@ -232,7 +246,7 @@
               <!-- ITEM 3 -->
               <div class="row item">
                 <div class="col-12">
-                  <img src="https://picsum.photos/350/350/?random" alt="" class="img-fluid">
+                  <img src="img/alicia.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-12">
                   <div class="card">
@@ -280,23 +294,23 @@
             <h4>Explorar</h4>
             <a href="./"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Inicio</a>
             <a href="estudio.html"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; El Estudio</a>
-            <a href="#"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
+            <a href="#services" class="to-scroll"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
             <a href="contacto.html"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Contacto</a>
           </div>
           <div class="col-md-6 col-lg-3 contact mb-5 mb-lg-0">
             <h4>Contáctenos</h4>
             <a href="tel:3624-446443"><i class="fas fa-phone-volume" style="font-size: 1.5rem;"></i> 3624-446443</a>
             <a href="mailto:info@ocampovazquez.com.ar"><i class="far fa-envelope-open" style="font-size: 1.5rem;"></i> info@ocampovazquez.com.ar</a>
-            <a href="#"><i class="far fa-clock" style="font-size: 1.5rem;"></i> Lunes a Viernes de 8:00 a 12:00 y de 17:00 a 20:00</a>
-            <a href="#"><i class="fas fa-map-marker-alt" style="font-size: 1.5rem;"></i> Padre Cerqueira 918 Resistencia Chaco</a>
+            <a href="https://goo.gl/maps/s9cqnDGRk3s" target="_blank"><i class="far fa-clock" style="font-size: 1.5rem;"></i> Lunes a Viernes de 8:00 a 12:00 y de 17:00 a 20:00</a>
+            <a href="https://goo.gl/maps/s9cqnDGRk3s" target="_blank"><i class="fas fa-map-marker-alt" style="font-size: 1.5rem;"></i> Padre Cerqueira 918 Resistencia Chaco</a>
           </div>
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
             <h4>Solicite una consulta rápida</h4>
-            <form action="">
-              <input type="text" placeholder="Su nombre y apellido">
-              <input type="email" placeholder="E-mail">
-              <input type="text" placeholder="Asunto">
-              <button type="submit" class="btn btn-primary">Enviar</button>
+            <form id="contact-footer">
+               <input type="text" name="nombre" placeholder="Su nombre y apellido">
+              <input type="email" name="email" placeholder="E-mail">
+              <input type="text" name="asunto" placeholder="Asunto">
+              <input type="button" class="btn btn-primary" id="btn_enviar_footer" onclick="contact_footer()" value="Enviar"><div id="resultado-footer"></div>
             </form>
           </div>
         </div>
@@ -315,7 +329,6 @@
 
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/owl.carousel.min.js"></script>
