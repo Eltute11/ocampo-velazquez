@@ -10,21 +10,30 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    // jQuery(function ($) {
-    //   document.onreadystatechange = () => {
-    //     if (document.readyState === 'complete') {
-    //       $('main').removeClass('d-none');
-    //       $('#loader').fadeOut("slow");
-    //     }
-    //   };
-    // });
+    jQuery(function ($) {
+      document.onreadystatechange = () => {
+        // Cuando la página termine de cargar
+        if (document.readyState === 'complete') {
+          $('main').removeClass('d-none');
+          $('#loader').fadeOut("slow");
+        }
+      };
+
+      setTimeout(() => {
+        // En caso de que haya ocurrido un problema en onreadystatechange
+        if($('main').hasClass('d-none')){
+          $('main').removeClass('d-none');
+          $('#loader').fadeOut("slow");
+        }
+      }, 5000);
+    });
   </script>
 </head>
 <body>
 
-   <!-- <div id="loader"><img src="img/logo.svg" alt=""></div> -->
+   <div id="loader"><img src="img/logo.svg" alt=""></div>
 
-   <main class="cd-main-content">
+   <main class="cd-main-content d-none">
 
     <header class="bg-image cover overlay-blue">
       <!-- NAV MOBILE -->
@@ -49,22 +58,16 @@
               <i class="fas fa-phone-volume fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
             </span>
           </a>
-          <a href="mailto:mail@ocampo-vazquez.com">
+          <a href="mailto:info@consultoraov.com.ar">
             <span class="fa-stack" style="font-size: 1.4rem;">
               <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
               <i class="far fa-envelope-open fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
             </span>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
             <span class="fa-stack" style="font-size: 1.4rem;">
               <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
               <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
-            </span>
-          </a>
-          <a href="#">
-            <span class="fa-stack" style="font-size: 1.4rem;">
-              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
-              <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
             </span>
           </a>
         </div>
@@ -82,19 +85,13 @@
                 </div>
                 <div class="col-auto link">
                   <a href="tel:+543624-446443" class="tel">+54 3624-446443</a>
-                  <a href="mailto:mail@ocampo-vazquez.com" class="mail">mail@ocampo-vazquez.com</a>
+                  <a href="mailto:info@consultoraov.com.ar" class="mail">info@consultoraov.com.ar</a>
                 </div>
                 <div class="col-auto">
-                  <a href="#">
+                  <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
                     <span class="fa-stack" style="font-size: 1rem;">
                       <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
                       <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
-                    </span>
-                  </a>
-                  <a href="#">
-                    <span class="fa-stack" style="font-size: 1rem;">
-                      <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
-                      <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
                     </span>
                   </a>
                 </div>
@@ -173,7 +170,7 @@
               </blockquote>
           </div>
           <div class="col-lg-5">
-              <img src="img/estudio.jpg" alt="" class="img-fluid rounded-lg">
+              <img src="img/people/img-oficina.jpg" alt="" class="img-fluid rounded-lg">
           </div>
         </div>
       </div>
@@ -199,7 +196,7 @@
               <div class="separator-xs"></div>
               <h2 class="mb-5">
                 <small>Conocelos</small>
-                Nuestros <span>socios</span>
+                Nuestro <span>equipo</span>
               </h2>
           </div>
         </div>
@@ -208,58 +205,130 @@
             <div class="owl-carousel" id="owl-team">
               <div class="row item">
                 <div class="col-12">
-                  <img src="img/alicia.jpg" alt="" class="img-fluid">
+                  <img src="img/people/img-equipo-AliciaVazquez.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-12">
                   <div class="card">
-                    <p class="title">Alicia C. Vazquez</p>
-                    <p class="subtitle">Contadora Pública</p>
+                    <p class="title">Alicia Vazquez</p>
+                    <p class="subtitle">Socia. Auditoria de EECC y Control de Gestión</p>
                     <p class="txt">
-                        Responsable de Asesoramiento financiero,<br>
-                        control de gestion y auditoria externa de estados contables
+                      Asesoramiento contable y en control de gestión.
                     </p>
-                    <a href="#" target="_blank">
-                      <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
-                    </a>
                   </div>
                 </div>
               </div>
               <!-- ITEM 2 -->
               <div class="row item">
                 <div class="col-12">
-                  <img src="img/alicia.jpg" alt="" class="img-fluid">
+                  <img src="img/people/img-equipo-PatriciaVazquez.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-12">
                   <div class="card">
-                    <p class="title">Alicia C. Vazquez</p>
-                    <p class="subtitle">Contadora Pública</p>
+                    <p class="title">Patricia Vazquez.</p>
+                    <p class="subtitle">Socia. Impuestos, Laboral y Previsional</p>
                     <p class="txt">
-                        Responsable de Asesoramiento financiero,<br>
-                        control de gestion y auditoria externa de estados contables
+                      Asesoramiento impositivo, laboral y previsional.
                     </p>
-                    <a href="#" target="_blank">
-                      <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
-                    </a>
                   </div>
                 </div>
               </div>
               <!-- ITEM 3 -->
               <div class="row item">
                 <div class="col-12">
-                  <img src="img/alicia.jpg" alt="" class="img-fluid">
+                  <img src="img/people/img-equipo-Paola-Correa.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-12">
                   <div class="card">
-                    <p class="title">Alicia C. Vazquez</p>
-                    <p class="subtitle">Contadora Pública</p>
+                    <p class="title">Paola Correa</p>
+                    <p class="subtitle">Asistente Control de Gestión</p>
                     <p class="txt">
-                        Responsable de Asesoramiento financiero,<br>
-                        control de gestion y auditoria externa de estados contables
+                      Administración de monotributos, legajos para instituciones financieras. Información para control de gestión económica y financiera.
                     </p>
-                    <a href="#" target="_blank">
-                      <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
-                    </a>
                   </div>
+                </div>
+              </div>
+              <!-- ITEM 4 -->
+              <div class="row item">
+                <div class="col-12">
+                  <img src="img/people/img-equipo-Maira-Rivero.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <p class="title">Maria Rivero</p>
+                    <p class="subtitle">Asistente Laboral y Previsional</p>
+                    <p class="txt">
+                      Liquidación de sueldos y cargas social, asesoramiento laboral. Constitución de sociedades, presentaciones DPJ, gestión de registraciones en libros societarios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM 5 -->
+              <div class="row item">
+                <div class="col-12">
+                  <img src="img/people/img-equipo-NataliaFreschi.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <p class="title">Natalia Freschi</p>
+                    <p class="subtitle">Asistente de Impuestos</p>
+                    <p class="txt">
+                      Liquidaciones impositivas (impuestos nacionales, provinciales y municipales). Asesoramiento impositivo.                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM 6 -->
+              <div class="row item">
+                <div class="col-12">
+                  <img src="img/people/img-equipo-JavierPalma.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <p class="title">Javier Palma</p>
+                    <p class="subtitle">Asistente Sistema de Gestión Municipal</p>
+                    <p class="txt">
+                      Implementación sistema de gestión municipal en municipios de la provincia. Asistencia técnica permanente, atención de consultas de municipios.                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM 7 -->
+              <div class="row item">
+                <div class="col-12">
+                  <img src="img/people/img-equipo-MarianoStachula.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <p class="title">Mariano Stachula</p>
+                    <p class="subtitle">Asistente Atención de Clientes</p>
+                    <p class="txt">
+                      Gestión de tramites. Pago de impuestos de clientes.                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM 8 -->
+              <div class="row item">
+                <div class="col-12">
+                  <img src="img/people/img-equipo-MiriamBlanco.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <p class="title">Miriam Blanco</p>
+                    <p class="subtitle">Asistente Atención de Clientes</p>
+                    <p class="txt">
+                      Atención a clientes, Input de comprobantes en sistema Tango Plus. V.18.1.                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM 9 -->
+              <div class="row item">
+                <div class="col-12">
+                  <img src="img/people/img-equipo-TomasCarlino.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <p class="title">Tomas Carlino</p>
+                    <p class="subtitle">Asistente Contable</p>
+                    <p class="txt">
+                      Registraciones contables, auditoria de saldos contables. Emisión de libros contables.                  </div>
                 </div>
               </div>
             </div>
@@ -277,24 +346,19 @@
                   Contamos con un equipo especializado en diferentes areas tecnicas. <br>
                   Mantenemos contacto directo con los clientes, escuchamos sus necesidades y elaboramos respuestas integrales a medida.
               </p>
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
                 <span class="fa-stack ">
                   <i class="fas fa-square fa-stack-2x" style="font-size: 1.2rem; color: #2f62a3;"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="font-size: 1.2rem; color: white;"></i>
                 </span>
               </a>
-              <a href="#" target="_blank">
-                <span class="fa-stack ">
-                  <i class="fas fa-square fa-stack-2x" style="font-size: 1.2rem; color: #2f62a3;"></i>
-                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="font-size: 1.2rem; color: white;"></i>
-                </span>
-              </a>
+              
           </div>
           <div class="col-md-6 col-lg-2 menu mb-5 mb-lg-0 ">
             <h4>Explorar</h4>
             <a href="./"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Inicio</a>
             <a href="estudio.html"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; El Estudio</a>
-            <a href="#services" class="to-scroll"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
+            <a href="./#services" class="to-scroll"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
             <a href="contacto.html"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Contacto</a>
           </div>
           <div class="col-md-6 col-lg-3 contact mb-5 mb-lg-0">

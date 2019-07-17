@@ -10,23 +10,32 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    // jQuery(function ($) {
-    //   document.onreadystatechange = () => {
-    //     if (document.readyState === 'complete') {
-    //       $('main').removeClass('d-none');
-    //       $('#loader').fadeOut("slow");
-    //     }
-    //   };
-    // });
+    jQuery(function ($) {
+      document.onreadystatechange = () => {
+        // Cuando la página termine de cargar
+        if (document.readyState === 'complete') {
+          $('main').removeClass('d-none');
+          $('#loader').fadeOut("slow");
+        }
+      };
+
+      setTimeout(() => {
+        // En caso de que haya ocurrido un problema en onreadystatechange
+        if($('main').hasClass('d-none')){
+          $('main').removeClass('d-none');
+          $('#loader').fadeOut("slow");
+        }
+      }, 5000);
+    });
   </script>
 </head>
 <body>
 
-  <!-- <img src="img/bg-header.jpg" alt="" style="opacity: 0;height: 0;width: 0;position:absolute;"> -->
+  <img src="img/bg-header.jpg" alt="" style="opacity: 0;height: 0;width: 0;position:absolute;">
 
-   <!-- <div id="loader"><img src="img/logo.svg" alt=""></div> -->
+   <div id="loader"><img src="img/logo.svg" alt=""></div>
 
-   <main class="cd-main-content">
+   <main class="cd-main-content d-none">
 
     <header class="absolute">
       <!-- NAV MOBILE -->
@@ -44,6 +53,26 @@
         <a href="estudio.html">El estudio</a>
         <a href="index.html#services" class="to-scroll">Servicios</a>
         <a href="contacto.html">Contacto</a>
+        <div class="contact-menu">
+          <a href="tel:+543624-446443">
+            <span class="fa-stack" style="font-size: 1.4rem;">
+              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+              <i class="fas fa-phone-volume fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+            </span>
+          </a>
+          <a href="mailto:info@consultoraov.com.ar">
+            <span class="fa-stack" style="font-size: 1.4rem;">
+              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+              <i class="far fa-envelope-open fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+            </span>
+          </a>
+          <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
+            <span class="fa-stack" style="font-size: 1.4rem;">
+              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+              <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
+            </span>
+          </a>
+        </div>
       </div>
       <!-- NAV DESKTOP -->
       <div class="container d-none d-lg-block top">
@@ -58,19 +87,13 @@
                 </div>
                 <div class="col-auto link">
                   <a href="tel:+543624-446443" class="tel">+54 3624-446443</a>
-                  <a href="mailto:mail@ocampo-vazquez.com" class="mail">mail@ocampo-vazquez.com</a>
+                  <a href="mailto:info@consultoraov.com.ar" class="mail">info@consultoraov.com.ar</a>
                 </div>
                 <div class="col-auto">
-                  <a href="#">
+                  <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
                     <span class="fa-stack" style="font-size: 1rem;">
                       <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
                       <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
-                    </span>
-                  </a>
-                  <a href="#">
-                    <span class="fa-stack" style="font-size: 1rem;">
-                      <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
-                      <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
                     </span>
                   </a>
                 </div>
@@ -198,7 +221,7 @@
             <img src="img/img-h1.jpg" alt="" class="img-fluid rounded d-none d-md-block overlay-blue">
           </div>
           <div class="col-12 col-md-4 text-center">
-            <img src="https://picsum.photos/350/300/?random" alt="" class="img-fluid rounded mb-md-3 overlay-blue">
+            <img src="img/img-h2.jpg" alt="" class="img-fluid rounded mb-md-3 overlay-blue">
             <h3 class="mt-3 mt-md-0">Futuros empresarios</h3>
             <p class="px-5 px-md-0">Necesitan asesoramiento de como iniciar su actividad.</p>
           </div>
@@ -242,37 +265,50 @@
                 <div class="col-lg-7 order-2 order-lg-1">
                   <div class="card">
                     <p class="title">Alicia C. Vazquez</p>
-                    <p class="subtitle">Contadora Pública</p>
+                    <p class="subtitle">Contadora. Auditoria de EECC y Control de Gestión</p>
                     <p class="txt">
-                        Responsable de Asesoramiento financiero,<br>
-                        control de gestion y auditoria externa de estados contables
+                        Asesoramiento Contable y en Control de Gestión
                     </p>
-                    <a href="#" target="_blank">
+                    <a href="https://ar.linkedin.com/in/alicia-vazquez-97618141" target="_blank">
                       <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
                     </a>
                   </div>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2">
-                  <img src="img/alicia-h.jpg" alt="" class="img-fluid">
+                  <img src="img/people/img-socios-Alicia-Vazquez.jpg" alt="" class="img-fluid">
                 </div>
               </div>
               <!-- ITEM 2 -->
               <div class="row item">
                 <div class="col-lg-7 order-2 order-lg-1">
                   <div class="card">
-                    <p class="title">Alicia C. Vazquez</p>
-                    <p class="subtitle">Contadora Pública</p>
+                    <p class="title">Patricia Vazquez</p>
+                    <p class="subtitle">Contadora. Impuestos, Laboral y Previsional</p>
                     <p class="txt">
-                        Responsable de Asesoramiento financiero,<br>
-                        control de gestion y auditoria externa de estados contables
+                      Asesoramiento Impositivo, Laboral y Previsional
                     </p>
-                    <a href="#" target="_blank">
+                    <a href="img/people/curriculumVitaeVazquezPatricia2016.docx" target="_blank">
                       <i class="fab fa-linkedin" style="font-size: 2.2rem; color: #4e88df;"></i> Ver CV
                     </a>
                   </div>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2">
-                  <img src="img/alicia-h.jpg" alt="" class="img-fluid">
+                  <img src="img/people/img-socios-PatriciaVazquez.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <!-- ITEM 3 -->
+              <div class="row item">
+                <div class="col-lg-7 order-2 order-lg-1">
+                  <div class="card">
+                    <p class="title">Crisitan Ocampo</p>
+                    <p class="subtitle">Fundador Asesor</p>
+                    <p class="txt">
+                        
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                  <img src="img/people/img-socios-CrisitanOcampo.jpg" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -290,24 +326,19 @@
                   Contamos con un equipo especializado en diferentes areas tecnicas. <br>
                   Mantenemos contacto directo con los clientes, escuchamos sus necesidades y elaboramos respuestas integrales a medida.
               </p>
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
                 <span class="fa-stack ">
                   <i class="fas fa-square fa-stack-2x" style="font-size: 1.2rem; color: #2f62a3;"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="font-size: 1.2rem; color: white;"></i>
                 </span>
               </a>
-              <a href="#" target="_blank">
-                <span class="fa-stack ">
-                  <i class="fas fa-square fa-stack-2x" style="font-size: 1.2rem; color: #2f62a3;"></i>
-                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="font-size: 1.2rem; color: white;"></i>
-                </span>
-              </a>
+              
           </div>
           <div class="col-md-6 col-lg-2 menu mb-5 mb-lg-0 ">
             <h4>Explorar</h4>
             <a href="./"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Inicio</a>
             <a href="estudio.html"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; El Estudio</a>
-            <a href="#services" class="to-scroll"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
+            <a href="./#services" class="to-scroll"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
             <a href="contacto.html"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Contacto</a>
           </div>
           <div class="col-md-6 col-lg-3 contact mb-5 mb-lg-0">

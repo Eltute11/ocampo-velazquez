@@ -10,21 +10,30 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    // jQuery(function ($) {
-    //   document.onreadystatechange = () => {
-    //     if (document.readyState === 'complete') {
-    //       $('main').removeClass('d-none');
-    //       $('#loader').fadeOut("slow");
-    //     }
-    //   };
-    // });
+    jQuery(function ($) {
+      document.onreadystatechange = () => {
+        // Cuando la página termine de cargar
+        if (document.readyState === 'complete') {
+          $('main').removeClass('d-none');
+          $('#loader').fadeOut("slow");
+        }
+      };
+
+      setTimeout(() => {
+        // En caso de que haya ocurrido un problema en onreadystatechange
+        if($('main').hasClass('d-none')){
+          $('main').removeClass('d-none');
+          $('#loader').fadeOut("slow");
+        }
+      }, 5000);
+    });
   </script>
 </head>
 <body>
 
-   <!-- <div id="loader"><img src="img/logo.svg" alt=""></div> -->
+   <div id="loader"><img src="img/logo.svg" alt=""></div>
 
-   <main class="cd-main-content">
+   <main class="cd-main-content d-none">
 
     <header class="bg-image cover overlay-blue">
       <!-- NAV MOBILE -->
@@ -49,22 +58,16 @@
               <i class="fas fa-phone-volume fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
             </span>
           </a>
-          <a href="mailto:mail@ocampo-vazquez.com">
+          <a href="mailto:info@consultoraov.com.ar">
             <span class="fa-stack" style="font-size: 1.4rem;">
               <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
               <i class="far fa-envelope-open fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
             </span>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
             <span class="fa-stack" style="font-size: 1.4rem;">
               <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
               <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
-            </span>
-          </a>
-          <a href="#">
-            <span class="fa-stack" style="font-size: 1.4rem;">
-              <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
-              <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
             </span>
           </a>
         </div>
@@ -82,19 +85,13 @@
                 </div>
                 <div class="col-auto link">
                   <a href="tel:+543624-446443" class="tel">+54 3624-446443</a>
-                  <a href="mailto:mail@ocampo-vazquez.com" class="mail">mail@ocampo-vazquez.com</a>
+                  <a href="mailto:info@consultoraov.com.ar" class="mail">info@consultoraov.com.ar</a>
                 </div>
                 <div class="col-auto">
-                  <a href="#">
+                  <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
                     <span class="fa-stack" style="font-size: 1rem;">
                       <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
                       <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
-                    </span>
-                  </a>
-                  <a href="#">
-                    <span class="fa-stack" style="font-size: 1rem;">
-                      <i class="fas fa-circle fa-stack-2x" style="color: #ffffff;"></i>
-                      <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: #2F62A3;"></i>
                     </span>
                   </a>
                 </div>
@@ -216,24 +213,19 @@
                   Contamos con un equipo especializado en diferentes areas tecnicas. <br>
                   Mantenemos contacto directo con los clientes, escuchamos sus necesidades y elaboramos respuestas integrales a medida.
               </p>
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/Ocampo-Vazquez-Asesores-Financieros-2186436594818069" target="_blank">
                 <span class="fa-stack ">
                   <i class="fas fa-square fa-stack-2x" style="font-size: 1.2rem; color: #2f62a3;"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="font-size: 1.2rem; color: white;"></i>
                 </span>
               </a>
-              <a href="#" target="_blank">
-                <span class="fa-stack ">
-                  <i class="fas fa-square fa-stack-2x" style="font-size: 1.2rem; color: #2f62a3;"></i>
-                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="font-size: 1.2rem; color: white;"></i>
-                </span>
-              </a>
+              
           </div>
           <div class="col-md-6 col-lg-2 menu mb-5 mb-lg-0 ">
             <h4>Explorar</h4>
             <a href="./"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Inicio</a>
             <a href="estudio.html"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; El Estudio</a>
-            <a href="#services" class="to-scroll"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
+            <a href="./#services" class="to-scroll"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Servicios</a>
             <a href="contacto.html"><i class="fas fa-long-arrow-alt-right"></i> &nbsp; Contacto</a>
           </div>
           <div class="col-md-6 col-lg-3 contact mb-5 mb-lg-0">
