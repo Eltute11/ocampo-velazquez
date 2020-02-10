@@ -102,6 +102,11 @@
             }
         }
     }
+    &.owl-estudio{
+        .owl-dots{
+            margin-top: 5px;
+        }
+    }
     .owl-nav{
         position: absolute;
         top: -90px;

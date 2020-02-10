@@ -98,6 +98,18 @@ jQuery(function($) {
       // animateOut: 'fadeOut'
     });
 
+    $('.owl-estudio').owlCarousel({
+      items:1,
+      autoplay:true
+    });
+
+    // LIGHTBOX
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel': 'Imagen %1 de %2'
+    })
+
     // PARALLAX
     var ancho = $(window).width();
     // Si trabajamos con una imagen desactivamos el background-size:cover;
